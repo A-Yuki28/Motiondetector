@@ -12,7 +12,7 @@ while True:
    strs = str.split(',')
    
    eventid = "line_event"
-   key = "cQy1b4pnf-vFcWQfWsayTG5AzEkayGhPVBnnQX7mypS" # IFTTTキー
+   key = "IFTTTKEY" # IFTTTキー
    payload = {"value1": strs[0], "value2": strs[1], "value3": strs[2] }
    url = "https://maker.ifttt.com/trigger/" + eventid + "/with/key/" + key
    response = requests.post(url, data=payload)
